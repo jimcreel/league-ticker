@@ -1,13 +1,9 @@
-export type Schedule = {
-    id: number,
-    league_id: number,
-    team_id: number,
-    game_id: number,
+export interface Schedule {
+    games: Game[],
 }
 
-export type Game = {
+export interface Game  {
     id: number,
-    schedule_id: number,
     team_id: number[],
     score: number[],
     status: string,
@@ -21,7 +17,7 @@ export type Game = {
     start_time: string,
 }
 
-export type Team = {
+export interface Team  {
     id: number,
     league_id: number,
     name: string,
@@ -29,7 +25,7 @@ export type Team = {
     player_id: number[],
 }
 
-export type Member = {
+export interface Member  {
     id: number,
     team_id: number,
     name: string,

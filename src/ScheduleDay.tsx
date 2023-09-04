@@ -1,7 +1,8 @@
-export default function ScheduleDay() {
+import {Game} from '../types';
+
+export default function ScheduleDay(props: { game: Game }) {
+    const { game } = props;
     return (
-        <div className="flex justify-between m-5">
-            <h1> ScheduleDay </h1>
-        </div>
-    )
+        <p>Game</p>
+    );
 }
