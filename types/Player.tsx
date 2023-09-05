@@ -1,0 +1,32 @@
+export interface Player{
+    id: number,
+    fullName: string,
+    link: string,
+    firstName: string,
+    lastName: string,
+    primaryNumber: string,
+    birthDate: string,
+    currentAge: number,
+    useName: string,
+    middleName: string,
+    boxscoreName: string,
+    nickName: string,
+    gender: string,
+    isPlayer: boolean,
+    isVerified: boolean,
+    batSide: {
+        code: string,
+        description: string,
+    },
+    pitchHand: {
+        code: string,
+        description: string,
+    },
+    nameFirstLast: string,
+    nameSlug: string,
+    firstLastName: string,
+    lastFirstName: string,
+    lastInitName: string,
+    initLastName: string,
+
+}
