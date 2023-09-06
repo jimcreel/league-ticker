@@ -1,29 +1,9 @@
 export interface Team {
 
-        id: number,
+        id?: number | null,
         name: string,
-        link: string,
-        season: number,
-        teamCode: string,
+        season?: number,
         abbreviation: string,
         teamName: string,
         shortName: string,
-        record: {
-            gamesPlayed: number,
-            leagueGamesBack: string,
-            leagueRecord: {
-                wins: number,
-                losses: number,
-                ties: number,
-                pct: string,
-            },
-            wins: number,
-            losses: number,
-            winningPercentage: string,
-            streak: {
-                streakType: string,
-                streakNumber: number,
-                streakCode: string,
-            },
         }
-}
