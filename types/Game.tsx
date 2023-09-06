@@ -1,4 +1,4 @@
-
+import { Team } from './Team';
 export interface Game  {
     id: number,
     team_id: number[],
@@ -12,4 +12,7 @@ export interface Game  {
     location: string,
     field: string,
     start_time: string,
+    winner?: Team | null,
+    loser?: Team | null,
+    tie?: boolean,
 }
